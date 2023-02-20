@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    #login-form{
+        position: relative;
+        width: 100%;
+        min-height: 500px;
+        background-color: rgb(228, 25, 167);
+    }
+    #login-form .login-body{
+       position: absolute;
+       top: 50px;
+       left: 260px;
+       right: 260px;
+       bottom: 50px;
+        background-color: #fff;
+    }
+    .form-content {
+        padding: 16px;
+    }
+    .login-body h2{
+        text-align: center;
+        padding: 16px;
+    }
+    #longin-email, #longin-password {
+        width: 100%;
+        margin-top: 8px;
+        line-height: 1.4;
+        border: 1px solid;
+        border-radius: 2px;
+        border-color: #ccc;
+        padding: 4px;
+    }
+   .forgot-pass {
+    display: block;
+        text-decoration: none;
+        color: darkmagenta;
+        line-height: 1.4;
+        padding: 8px 0;
+    }
+    .submit {
+        border: none;
+        display: block;
+        width: 100%;
+        padding: 8px;
+        font-weight: 600;
+        color: #fff ;
+        background-color:rgb(228, 25, 167);
+    }
+    .signup-now {
+        margin-top: 16px;
+        text-decoration: none;
+    }
+    .signup-now a {
+        text-decoration: none;
+        color: rgb(228, 25, 167);
+    }
+    
+    .login-tab , .signup-tab {
+        float: left;
+        width: 50%;
+        border: none;
+        padding: 8px 4px;
+        border-radius: 4px;
+    }
+    .login-tab {
+       
+        background-color:rgb(228, 25, 167) ;
+        color: #fff;
+    }
+
+</style>
+
+<body>
+    <!-- Login Form -->
+    <div id="login-form">
+        <div class="login-body">
+            <h2>Login Form</h2>
+            <div class="form-content">
+                <form action="">
+                    <input class="login-tab" type="button" value="Login">
+                    <input class="signup-tab" type="button" value="Signup"> <br>
+                    <input type="email" placeholder="Email Address" name="longin-email" id="longin-email">
+                    <input type="password" placeholder="password" name="longin-password" id="longin-password">
+                    <a href="#" class="forgot-pass">Forgot password</a> <br>
+                    <input class="submit" type="submit" value="Login">
+                <p class="signup-now">Not a member? <a href="#">Signup now</a></p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
